@@ -49,26 +49,12 @@ def main():
         string='', layout = [1,2], WH=[4,4]
         )
     
-    # result_plot(u, v, u_min=0, u_max=1, v_min=0, v_max=1,string='',layout = [1,2], WH=[4,4])
-    
     # 画出位移等值图
     contourf_plot(
         u, v, N=10, 
         u_min=umin, u_max=umax, v_min=vmin, v_max=vmax, 
         string='', layout = [1,2], WH=[4,4]
         )
-    
-    # contourf_plot(u, v, IX, IY, N=10, u_min=0, u_max=1, v_min=0, v_max=1,string='',layout = [1,2], WH=[4,4])
-    
-    # 画出位移误差云图
-    # error_plot(
-    #     u_error, v_error, 
-    #     u_min=umin, u_max=umax, v_min=vmin, v_max=vmax,
-    #     string='',layout = [1,2], WH=[4,4]
-    #     )
-    
-    # error_plot(u_error, v_error, u_min=1, u_max=0, v_min=0, v_max=1, string='',layout = [1,2], WH=[4,4])
-
     
 if __name__ == "__main__":
     main()
